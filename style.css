@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #282828;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.input-form {
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "paragraph"
+    "input-fields"
+    "button";
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  grid-area: heading;
+  color: white;
+  font-size: 65px;
+  font-family: "Montserrat ", sans-serif;
+  line-height: 2em;
+  font-weight: bold;
+  width: auto;
+}
+
+.thanksPageHeading {
+  grid-area: heading;
+  margin-left: 35px;
+  color: white;
+  font-size: 65px;
+  font-family: "Montserrat ", sans-serif;
+  line-height: 2em;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.Line {
+  border-style: solid;
+  border-top-width: 10px;
+  color: #d02035;
+  width: 280px;
+}
+
+.paragraph {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Merriweather", serif;
+  width: auto;
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 35px;
+  font-family: "Montserrat ", sans-serif;
+  font-weight: bold;
+}
+
+.thanksPageParagraph {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 35px;
+  font-family: "Merriweather", serif;
+  width: 1000px;
+}
+
+.error-message {
+  border-color: white;
+  width: fit-content;
+  color: white;
+  margin-left: 270px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: "Merriweather", serif;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.input-fields {
+  margin-top: 70px;
+  grid-area: input-fields;
+  font-size: 2em;
+  width: auto;
+}
+
+.input-1 {
+  grid-area: input-1;
+  width: 50%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #d3d3d3;
+  color: #282828;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+.input-Border {
+  border-style: solid;
+  border-color: #d02035;
+  border-radius: 2%;
+}
+
+.input-2 {
+  grid-area: input-2;
+  width: 49%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #d3d3d3;
+  font-family: "Merriweather", serif;
+  color: #282828;
+  font-style: italic;
+}
+
+button {
+  grid-area: button;
+  color: #d3d3d3;
+  background-color: #d02035;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+  padding: 15px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+option {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .input-form {
+    display: grid;
+    grid-template-areas:
+      "heading"
+      "paragraph"
+      "input-1"
+      "input-2"
+      "button";
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading {
+    grid-area: heading;
+    color: white;
+    font-size: 35px;
+    font-family: "Montserrat ", sans-serif;
+    line-height: 2em;
+    font-weight: bold;
+    width: fit-content;
+  }
+  .Line {
+    border-style: solid;
+    border-top-width: 5px;
+    color: #d02035;
+    width: 280px;
+  }
+  .paragraph {
+    grid-area: paragraph;
+    color: white;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 20px;
+    font-family: "Merriweather", serif;
+    width: auto;
+  }
+
+  .input-fields {
+    margin-top: 10px;
+    font-size: 2em;
+  }
+
+  .input-1 {
+    grid-area: input-1;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #d3d3d3;
+    color: #282828;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+  }
+
+  .input-Border {
+    border-style: solid;
+    border-color: #d02035;
+    border-radius: 2%;
+  }
+
+  .input-2 {
+    grid-area: input-2;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #d3d3d3;
+    font-family: "Merriweather", serif;
+    color: #282828;
+    font-style: italic;
+  }
+
+  .thanksPageHeading {
+    grid-area: heading;
+    color: white;
+    font-size: 33px;
+    font-family: "Montserrat ", sans-serif;
+    line-height: 2em;
+    font-weight: bold;
+    width: fit-content;
+  }
+
+  .thanksPageParagraph {
+    grid-area: paragraph;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: "Merriweather", serif;
+    width: auto;
+  }
+}
